@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Madhavan Pankaj Srivastava | Portfolio</title>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body, html {
+      height: 100%;
+      font-family: 'Arial', sans-serif;
+      color: #333;
+      overflow-x: hidden;
+      background: #f7f7f7;
+    }
+
+    /* Video Background */
+    .video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: -1;
+    }
+    .video-background iframe {
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      filter: brightness(0.6);
+    }
+    .video-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    /* Main Content Container */
+    .content {
+      position: relative;
+      z-index: 2;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem;
+      background: rgba(255,255,255,0.95);
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+    
+    /* Header and Navigation */
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      letter-spacing: 1px;
+      margin-bottom: 0.5rem;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      transition: text-shadow 0.3s ease;
+    }
+    nav a:hover {
+      text-shadow: 0 0 8px rgba(0,150,255,0.8);
+    }
+    
+    /* Sections */
+    section {
+      margin-bottom: 2rem;
+      padding: 1rem;
+      border-left: 4px solid transparent;
+      transition: border-color 0.4s ease;
+    }
+    section.electric {
+      border-color: rgba(0,150,255,0.8);
+    }
+    section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+      position: relative;
+    }
+    section h2::after {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 2px;
+      background: #0096ff;
+      margin-top: 0.4rem;
+      transition: width 0.4s ease;
+    }
+    section.electric h2::after {
+      width: 100px;
+    }
+    section p, section li {
+      line-height: 1.6;
+      margin-bottom: 0.8rem;
+    }
+    
+    /* List Styling */
+    ul {
+      list-style: none;
+    }
+    ul li {
+      margin-bottom: 0.5rem;
+      padding-left: 1.2rem;
+      position: relative;
+    }
+    ul li i {
+      color: #0096ff;
+      margin-right: 0.5rem;
+    }
+    
+    /* Volunteer Items */
+    .volunteer-item {
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      background: #f0f0f0;
+      border-radius: 5px;
+    }
+    .volunteer-item h3 {
+      margin-bottom: 0.5rem;
+    }
+    .volunteer-item p {
+      font-style: italic;
+      margin-bottom: 0.5rem;
+    }
+    
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      border-top: 1px solid #ddd;
+      margin-top: 2rem;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      nav ul {
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Video Background Section -->
+  <div class="video-background">
+    <iframe src="https://www.pexels.com/video/a-man-sitting-down-to-work-on-his-laptop-5527786/" 
+      frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    <div class="video-overlay"></div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="content">
+    <header>
+      <h1>MADHAVAN PANKAJ SRIVASTAVA</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#honours">Honours</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#volunteer">Volunteer</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="about">
+      <h2>Professional Summary</h2>
+      <p>
+        Dynamic and results-driven professional with experience at JEE Society, where I enhanced brand awareness through innovative marketing campaigns. Skilled in teamwork and problem-solving, I effectively boosted social media engagement and facilitated knowledge sharing. Committed to delivering impactful results while maintaining a positive attitude and attention to detail in all endeavors. As an aspiring entrepreneur, I am deeply interested in Gen AI and AI agents. Additionally, I have a strong passion for project management and consulting.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li><i class="fa fa-check"></i> Product management (started Jan 2025)</li>
+        <li><i class="fa fa-check"></i> Entrepreneurship (started Feb 2025)</li>
+        <li><i class="fa fa-check"></i> Leadership qualities</li>
+        <li><i class="fa fa-check"></i> Branding</li>
+        <li><i class="fa fa-check"></i> Sponsorship management</li>
+        <li><i class="fa fa-check"></i> Marketing collateral preparation</li>
+        <li><i class="fa fa-check"></i> Public speaking</li>
+        <li><i class="fa fa-check"></i> Attention to detail</li>
+        <li><i class="fa fa-check"></i> Event planning</li>
+      </ul>
+    </section>
+
+    <section id="honours">
+      <h2>Honours &amp; Awards</h2>
+      <ul>
+        <li>1st Runner Up at Prodhive at B.A.S.H. 7.0 (IIT BHU)</li>
+        <li>1st Runner Up at Kotler's Maniac at B.A.S.H. 7.0 (IIT BHU)</li>
+        <li>1st Runner Up at ADventure - The Marketing Competition at E-Summit'25 (IIT BHU)</li>
+        <li>1st Runner Up at Xpanse - The B-Plan Competition at E-Summit'25 (IIT BHU)</li>
+        <li>1st Runner Up at Founder's Gambit at E-Summit'25 (IIT BHU)</li>
+        <li>National Winners at Casex - The Consulting Competition</li>
+        <li>National Winners at Prodnosis - The product management competition</li>
+        <li>National Finalist at Smart Mobility Challenge IIM Calcutta</li>
+        <li>National Finalist Consultathon</li>
+        <li>Award of Distinction in Mathematics, Computer Science, French, and English | K.R. Mangalam World School Vaishali</li>
+      </ul>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <p><strong>Integrated Dual Degree (IDD) - Metallurgical Engineering</strong></p>
+      <p>August 2024 - August 2029</p>
+      <p>Indian Institute of Technology - Banaras Hindu University (IIT-BHU), Varanasi, Varanasi</p>
+    </section>
+
+    <section id="volunteer">
+      <h2>Volunteer Experience</h2>
+      <div class="volunteer-item">
+        <h3>Jagriti - IIT BHU | Varanasi, India</h3>
+        <p><em>Marketing Co-ordinator | December 2024 - January 2025</em></p>
+        <ul>
+          <li>Assisted with special events and programs.</li>
+          <li>Maintained clean, neat, and operational facilities to serve program needs.</li>
+          <li>Supported engaging, fun, and smooth-running events by helping with organization and planning.</li>
+          <li>Used strong interpersonal communication skills to convey information to others.</li>
+          <li>Represented the organization positively and professionally while providing the community with much-needed services.</li>
+          <li>Boosted fundraising efforts, securing valuable sponsorships through Local Fund Raising.</li>
+        </ul>
+      </div>
+      <div class="volunteer-item">
+        <h3>JEE Society | Remote, India</h3>
+        <p><em>Founder’s Office | November 2024 - January 2025</em></p>
+        <ul>
+          <li>Gained valuable experience working within a specific industry, applying learned concepts directly into relevant work situations.</li>
+          <li>Facilitated knowledge sharing by creating internal wikis for project guidelines.</li>
+          <li>Boosted social media engagement through creative content creation.</li>
+          <li>Explored new technologies and approaches to streamline processes.</li>
+          <li>Prepared comprehensive reports summarizing data analysis findings, informing key decision-makers of important trends and patterns.</li>
+          <li>Collaborated on a marketing campaign that significantly increased brand awareness.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <p>AI and ML through PYTHON course from IIT Kanpur</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Information</h2>
+      <p><i class="fa fa-map-marker-alt"></i> New Delhi, India</p>
+      <p><i class="fa fa-phone"></i> 7840008199</p>
+      <p><i class="fa fa-envelope"></i> <a href="mailto:madhavan.psrivastava.met24@itbhu.ac.in">madhavan.psrivastava.met24@itbhu.ac.in</a></p>
+      <p><i class="fa fa-globe"></i> <a href="#">View Website</a></p>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Madhavan Pankaj Srivastava. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <!-- JavaScript for subtle "electricity" transitions -->
+  <script>
+    // Add a glowing effect on link hover (electricity transition)
+    document.querySelectorAll('a').forEach(link => {
+      link.addEventListener('mouseover', function() {
+        this.style.textShadow = '0 0 8px rgba(0,150,255,0.8)';
+      });
+      link.addEventListener('mouseout', function() {
+        this.style.textShadow = 'none';
+      });
+    });
+
+    // Use IntersectionObserver to add a flash effect on section titles when they come into view.
+    const sections = document.querySelectorAll('section');
+    const options = { threshold: 0.1 };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('electric');
+          setTimeout(() => entry.target.classList.remove('electric'), 500);
+        }
+      });
+    }, options);
+    
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>
